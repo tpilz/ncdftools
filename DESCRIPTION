@@ -1,0 +1,17 @@
+Package: ncdftools
+Title: Some tools for working with NetCDF files
+Version: 0.0.1
+Authors@R: c(person(given="Tobias",
+                    family="Pilz",
+                    email="topilz@pik-potsdam.de",
+                    role=c("aut","cre"),
+                    comment = c(ORCID = "0000-0002-5641-3918")),
+             person(given="Potsdam Institute for Climate Impact Research (PIK)",
+                    role=c("cph", "fnd")))
+Description: What the package does (one paragraph).
+License: GPL (>= 3)
+Imports: ncdf4
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
