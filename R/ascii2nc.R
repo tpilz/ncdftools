@@ -61,6 +61,6 @@ ascii2nc <- function(ascii, nc,
   # write values
   ncdf4::ncvar_put(ncnew, vardef, dat[[col_value]])
   ncdf4::ncatt_put(ncnew, 0, "Note",
-            "Created with R function ascii2nc() by Tobias Pilz, Potsdam Institute for Climate Impact Research, Potsdam, Germany")
+            paste0("Created with R function ncdftools::ascii2nc(), version ", as.character(packageVersion("ncdftools")), ", https://github.com/tpilz/ncdftools"))
   ncdf4::ncatt_put(ncnew, 0, "date", as.character(Sys.time(), usetz = T))
 }
